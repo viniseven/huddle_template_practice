@@ -144,7 +144,11 @@
 
 @media (max-width: 589px){
     .card{
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
+
+    .card:nth-child(even){
+        flex-direction: column;
+      }
 }
