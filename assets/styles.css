@@ -81,26 +81,6 @@
     display: flex;
 }
 
-@media (max-width: 1327px){
-    .content-header{
-        flex-direction: column;
-    }
-
-    .content-header .title{
-        width: 100vw;
-    }
-}
-
-@media (max-width: 1320px){
-    .image-title{
-        width: 55%;
-    }
-
-    #header{
-        height: 60vh;
-    }
-}
-
 .card{
     width: 60%;
     margin: auto;
@@ -130,34 +110,6 @@
     margin-top: 4%;
     color: #808d99;
     font-weight: 400;
-}
-
-@media (max-width: 1024px){
-    .content-card p{
-        font-size: 0.9em;
-        padding: 2%;
-    }
-
-    #header{
-        height: 45vh;
-    }
-}
-
-@media (max-width: 800px){
-   .card{
-       width: 80%;
-   }
-}
-
-@media (max-width: 589px){
-    .card{
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .card:nth-child(even){
-        flex-direction: column;
-      }
 }
 
 .content-start-user{
@@ -203,17 +155,16 @@
 
 #footer img{
     margin-top: 6%;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 .contacts{
-    border: 1px solid blue;
-    width: 30%;
+    width: 90%;
     margin-top: 1%;
     margin-left: 10%;
     display: flex;
     padding-left: 2%;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .contact-content{
@@ -225,4 +176,101 @@
 .contact-content p{
     color: #fff;
     padding-left: 3%;
+}
+
+@media (max-width: 1629px){
+    .content-start-user h1{
+        font-size: 1.5rem;
+    }
+
+    .content-start-user button{
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 1353px){
+    .content-start-user h1{
+        font-size: 1rem;
+    }
+
+    .content-start-user button{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 1329px){
+    .image-title{
+        width: 50%;
+    }
+}
+
+@media (max-width: 1201px){
+    .title{
+        padding: 0;
+    }
+
+    .content-header {
+        margin-top: 15%;
+    }
+}
+
+@media (max-width: 935px){
+    .content-header{
+        flex-direction: column-reverse;
+    }
+
+    .title{
+        width: 100%;
+    }
+
+    .content-start-user{
+        display: none;
+    }
+
+    .contacts {
+        flex-direction: row;
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 723px){
+    .card{
+        width: 90%;
+    }
+}
+
+@media (max-width: 591px){
+    .title h1{
+        font-size: 2rem;
+    }
+
+    #header{
+        height: 75vh;
+    }
+}
+
+@media (max-width: 483px){
+    .card{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .card:nth-child(even){
+        flex-direction: column;
+      }
+
+    .content-card {
+        width: 90%;
+    }
+
+    .content-card h1,p{
+        text-align: center;
+    }
+
+    .contact-content p{
+        font-size: 0.7rem;
+    }
+
 }
