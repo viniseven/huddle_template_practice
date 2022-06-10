@@ -10,7 +10,7 @@
 
 #header{
     background: url(./bg-hero-desktop.svg);
-    height: 96vh;
+    height: auto;
     background-color: #eaf5ff;
 }
 .container{
@@ -22,7 +22,7 @@
 .content-header{
     display: flex;
     align-items: center;
-    margin-top: 5%;
+    margin: 5% 0%;
     padding: 0% 5%;
 }
 
@@ -246,10 +246,7 @@
         font-size: 2rem;
     }
 
-    #header{
-        height: 75vh;
-    }
-}
+
 
 @media (max-width: 483px){
     .card{
@@ -271,6 +268,14 @@
 
     .contact-content p{
         font-size: 0.7rem;
+    }
+
+    #header{
+        height: auto;
+    }
+
+    .content-header{
+        padding-bottom: 5%;
     }
 
 }
